@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.blackHover {
+  @apply px-2 py-2  border border-transparent transition duration-300;
+}
+
+.blackHover:hover {
+  @apply bg-black box-border  border-white shadow-lg shadow-black scale-105;
+}
+
+.productHover {
+  @apply transition ease-in duration-150 text-transparent;
+}
+
+.productHover:hover {
+  @apply shadow-white bg-gray-100 text-black scale-105 shadow-lg cursor-pointer;
+}
+
+.blackHover2 {
+  @apply text-black  px-4 py-2 transition-all duration-300;
+}
+
+.blackHover2:hover {
+  @apply bg-black text-white box-border  border-white shadow-lg shadow-black scale-110;
+}
+
+.scrollHidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

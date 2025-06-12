@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+.navButton {
+  @apply text-black bg-gray-100 w-40 h-10 px-4 py-2  border border-transparent transition-all duration-300;
+}
+
+.navButton:hover {
+  @apply bg-black text-white box-border  border-white shadow-lg shadow-black cursor-pointer;
+}
+
+.tituloHeader {
+  @apply text-left text-6xl  font-bold p-5 flex;
+}
+
+@media screen and (max-width: 768px) {
+  .tituloHeader {
+    @apply text-2xl;
+  }
+
+  .navButton {
+    @apply w-30;
+  }
+
+  .buttonAlign {
+    @apply flex justify-center;
+  }
+}

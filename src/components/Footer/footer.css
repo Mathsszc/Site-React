@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.Social {
+  @apply rounded-2xl gap-3 text-black font-bold w-50 h-13 p-5 flex flex-row items-center cursor-pointer;
+}
+
+.Social:hover {
+  @apply bg-gray-400;
+}
+
+.Footer {
+  @apply bg-gray-100 h-20 flex flex-col items-center justify-between;
+}
+
+.icon {
+  @apply size-10;
+}
+
+.MainSocial {
+  @apply h-20 flex justify-center items-center;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    @apply h-20;
+  }
+
+  .MainSocial {
+    @apply flex-row;
+  }
+
+  .Social {
+    @apply w-min p-0 gap-1 h-10;
+  }
+
+  .icon {
+    @apply size-5;
+  }
+}

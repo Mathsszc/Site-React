@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+.buttonCountL {
+  @apply text-black w-20 h-10 bg-amber-500 flex justify-center items-center cursor-pointer rounded-l-2xl border-l-3 border-b-3 border-t-3;
+}
+
+.buttonCountR {
+  @apply text-black w-20 h-10 bg-amber-500 flex justify-center items-center cursor-pointer rounded-r-2xl border-r-3 border-b-3 border-t-3;
+}
+
+.buttonCount:hover {
+  @apply text-amber-500 bg-black;
+}
+
+.clear {
+  @apply cursor-pointer bg-amber-500 rounded-lg w-30 h-10 border-3 text-black border-black font-bold transition duration-200;
+}
+.clear:hover {
+  @apply cursor-pointer bg-black w-40 rounded-lg border border-black font-bold text-amber-500 scale-105;
+}
+
+.addCart {
+  @apply cursor-pointer bg-amber-500 rounded-lg w-50 h-14 border-3 text-black border-black font-bold transition duration-200;
+}
+.addCart:hover {
+  @apply cursor-pointer bg-black w-70 rounded-lg h-14 border border-black font-bold text-amber-500 scale-105;
+}
+
+.mainview {
+  @apply p-10 w-2xl h-full flex flex-row;
+}
+
+.imageProduct {
+  @apply w-100 h-100 flex justify-center items-center rounded-lg border-3 border-black;
+}
+
+.buttons {
+  @apply w-full h-1/2 flex flex-col justify-start items-center gap-5;
+}
+
+.infosProduct {
+  @apply h-full w-1/2 flex flex-col px-5;
+}
+
+.frame {
+  @apply h-full w-300;
+}
+
+@media (max-width: 768px) {
+  .mainview {
+    @apply p-10 w-2xl h-200 flex flex-col justify-self-center items-center;
+  }
+
+  .frame {
+    @apply w-100;
+  }
+
+  .imageButton {
+    @apply order-2;
+  }
+}
