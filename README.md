@@ -3,6 +3,7 @@ Projeto de Loja de Produtos
 Este site é uma loja de produtos, dentro dele teremos o inicio, produtos e carrinho. Se divirta!.
 
 
+
 🚀 Começando
 
 Estas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
@@ -11,6 +12,7 @@ Estas instruções permitirão que você obtenha uma cópia do projeto em opera�
 Pré-requisitos
 
 O que você precisa para instalar o software:
+
 
 
 
@@ -52,7 +54,7 @@ Configure os caminhos dos seus arquivos no tailwind.config.js:
 typescript
 
 
-/** @import "tailwindcss" */
+import tailwindcss from "@tailwindcss/vite";
 
 export default {
 
@@ -68,7 +70,7 @@ export default {
     
   },
   
-  plugins: [tailwind()],
+  plugins: [tailwindcss()],
   
 }
 
