@@ -49,10 +49,10 @@ npm install tailwindcss @tailwindcss/vite
 Configure os caminhos dos seus arquivos no tailwind.config.js:
 
 
-JavaScript
+typescript
 
 
-/** @type {import('tailwindcss').Config} */
+/** @import "tailwindcss" */
 
 export default {
 
