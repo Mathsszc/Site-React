@@ -22,7 +22,9 @@ Clone o repositório:
 
 
 git clone https://github.com/seu-usuario/seu-repositorio.git
+
 cd seu-repositorio
+
 Instale o React com Vite e TypeScript:
 
 
@@ -36,11 +38,13 @@ npm install
 
 
 🎨 Instalando e configurando o Tailwind CSS
+
 Instale o Tailwind CSS e suas dependências:
 
 
 
 npm install tailwindcss @tailwindcss/vite
+
 Configure os caminhos dos seus arquivos no tailwind.config.js:
 
 
@@ -48,15 +52,23 @@ JavaScript
 
 
 /** @type {import('tailwindcss').Config} */
+
 export default {
+
   content: [
+  
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
+  
     extend: {},
+    
   },
+  
   plugins: [tailwind()],
+  
 }
 
 Adicione as diretivas do Tailwind no seu arquivo CSS principal (./src/index.css):
@@ -68,6 +80,7 @@ CSS
 @import "tailwindcss"
 
 ✨ Instalando Bibliotecas Adicionais
+
 Instale o Phosphor React para ícones:
 
 
